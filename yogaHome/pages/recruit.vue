@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// antigravity-fitness 品牌介紹-antigravity-fitness👈
+// recruit 聯絡我們－徵才資訊
 </script>
 
 <template lang="pug">
-#antigravity-fitness
-  p antigravity-fitness 品牌介紹-antigravity-fitness
+#recruit
+  p recruit 聯絡我們－徵才資訊
 </template>
 
 <style lang="scss" scoped>

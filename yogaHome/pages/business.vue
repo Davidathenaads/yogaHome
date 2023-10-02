@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// antigravity-fitness 品牌介紹-antigravity-fitness👈
+// business  聯絡我們－企業合作
 </script>
 
 <template lang="pug">
-#antigravity-fitness
-  p antigravity-fitness 品牌介紹-antigravity-fitness
+#business
+  p business 聯絡我們－企業合作
 </template>
 
 <style lang="scss" scoped>

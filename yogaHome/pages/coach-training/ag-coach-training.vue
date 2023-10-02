@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// antigravity-fitness 品牌介紹-antigravity-fitness👈
+// ag-coach-training 師資認證-反重力空中培訓
 </script>
 
 <template lang="pug">
-#antigravity-fitness
-  p antigravity-fitness 品牌介紹-antigravity-fitness
+#ag-coach-training
+  p ag-coach-training 師資認證-反重力空中培訓
 </template>
 
 <style lang="scss" scoped>

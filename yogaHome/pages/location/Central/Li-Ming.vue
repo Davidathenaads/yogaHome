@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// antigravity-fitness 品牌介紹-antigravity-fitness👈
+// Li-Ming 據點介紹-台中黎明館
 </script>
 
 <template lang="pug">
-#antigravity-fitness
-  p antigravity-fitness 品牌介紹-antigravity-fitness
+#Li-Ming
+  p Li-Ming 據點介紹-台中黎明館
 </template>
 
 <style lang="scss" scoped>

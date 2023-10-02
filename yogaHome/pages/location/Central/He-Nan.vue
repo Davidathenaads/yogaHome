@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// antigravity-fitness 品牌介紹-antigravity-fitness👈
+// He-Nan 據點介紹-台中河南館
 </script>
 
 <template lang="pug">
-#antigravity-fitness
-  p antigravity-fitness 品牌介紹-antigravity-fitness
+#He-Nan
+  p He-Nan 據點介紹-台中河南館
 </template>
 
 <style lang="scss" scoped>

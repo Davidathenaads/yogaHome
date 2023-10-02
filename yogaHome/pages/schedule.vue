@@ -1,13 +1,14 @@
 <script setup lang="ts">
-// abourtus 👈品牌介紹-FLY HIGH YOGA
+// schedule  課程資訊-瑜珈課程表
 </script>
 
 <template lang="pug">
-#abourtus
-  p FLY HIGH YOGA 品牌介紹-FLY HIGH YOGA
+#schedule
+  p schedule 課程資訊-瑜珈課程表
 </template>
 
 <style lang="scss" scoped>
+// 佈局 ----
 
 // 組件 ----
 </style>

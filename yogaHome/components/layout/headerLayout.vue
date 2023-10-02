@@ -84,29 +84,29 @@ const ClickIntroduction = () => {
             div(class="dropdown-menu absolute z-20 ml-7 hidden pt-12 text-sm")
               ul(class=" -mt-1  mb-0 min-w-[220px]  pl-0")
                 li(class=" hover:opacity-80")
-                  NuxtLink(to="/about" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3]  bg-[#F09491] px-4 pb-3 pt-[10px]") FLY HIGH YOGA
+                  NuxtLink(to="/intro/aboutus" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3]  bg-[#F09491] px-4 pb-3 pt-[10px]") FLY HIGH YOGA
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") AntiGravity® Fitness
+                  NuxtLink(to="/intro/antigravity-fitness" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") AntiGravity® Fitness
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") ACTIVE™
+                  NuxtLink(to="/activity/vip-active" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") ACTIVE™
         li(class="dropdown p-5 text-sm")
           label(class="cursor-pointer ") 官方訊息
             div(class="dropdown-menu absolute z-20 ml-7 hidden pt-12 text-sm")
               ul(class=" -mt-1  mb-0 min-w-[220px] pl-0")
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 官方訊息
+                  NuxtLink(to="/press/list/news" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 官方訊息
                     span News
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 優惠訊息
+                  NuxtLink(to="/press/list/special-offers" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 優惠訊息
                     span SPECIAL OFFER
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 課程分享
+                  NuxtLink(to="/press/list/activity" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 課程分享
                     span Class Highlights
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 特別活動
+                  NuxtLink(to="/press/list/hall-info" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 特別活動
                     span Special Events
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 部落格
+                  NuxtLink(to="/press/list/blog" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 部落格
                     span Blog
         li(class="dropdown p-5 text-sm")
           label(class="cursor-pointer ") 課程資訊
@@ -127,56 +127,56 @@ const ClickIntroduction = () => {
                     span General Course
                 ul(v-show="isCourse" class="pl-5")
                   li(class=" hover:opacity-80")
-                    a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") 反重力課程
+                    NuxtLink(to="/product/list/general/antiGravity-course" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") 反重力課程
                       span AntiGravity® Fitness
                   li(class=" hover:opacity-80")
-                    a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#f9cda6] px-4 pb-3 pt-[10px]") 大地課程
+                    NuxtLink(to="/product/list/general/yoga" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#f9cda6] px-4 pb-3 pt-[10px]") 大地課程
                       span Yoga
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈私教
+                  NuxtLink(to="/product/list/private/" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈私教
                     span PRIVATE COURSE
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈包班
+                  NuxtLink(to="/product/list/business/" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈包班
                     span BUSINESS COURSE
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈師資
+                  NuxtLink(to="/teacher" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈師資
                     span Teachers
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈課程表
+                  NuxtLink(to="/schedule" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈課程表
                     span Class Schedule
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 健身私教
+                  NuxtLink(to="/activity/vip-active" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 健身私教
         li(class="dropdown p-5 text-sm")
           label(class="cursor-pointer ") 據點介紹
             div(class="dropdown-menu absolute z-20 ml-7 hidden pt-12 text-sm")
               ul(class=" -mt-1  mb-0 min-w-[220px]  pl-0")
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中崇德館
+                  NuxtLink(to="/location/Central/Chong-De" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中崇德館
                     span Chong-De
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中崇德尊爵館
+                  NuxtLink(to="/location/Central/Chong-De2" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中崇德尊爵館
                     span Chong-De2
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台南崇善館
+                  NuxtLink(to="/location/southern/Chong-Shan" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台南崇善館
                     span Chong-Shan
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中精誠館
+                  NuxtLink(to="/location/Central/Ching-Cheng" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中精誠館
                     span Ching-Cheng
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中河南館
+                  NuxtLink(to="/location/Central/He-Nan" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中河南館
                     span He-Nan
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中黎明館
+                  NuxtLink(to="/location/Central/Li-Ming" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中黎明館
                     span Li-Ming
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中一中館
+                  NuxtLink(to="/location/Central/Yi-Jhong" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 台中一中館
                     span Yi-Jhong
         li(class="dropdown p-5 text-sm")
           label(class="cursor-pointer ") 師資認證
             div(class="dropdown-menu absolute z-20 ml-7 hidden pt-12 text-sm")
               ul(class=" -mt-1  mb-0 min-w-[220px]  pl-0")
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 反重力空中培訓
+                  NuxtLink(to="/coach-training/ag-coach-training" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 反重力空中培訓
                     span AG® Trainings
                 li(class=" hover:opacity-80")
                   a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 瑜珈師資培訓
@@ -191,37 +191,37 @@ const ClickIntroduction = () => {
                   a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 新館歡慶
                 ul(v-show="isCelebrating" class="pl-5")
                   li(class=" hover:opacity-80")
-                    a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") O'Power  Fitness 健身私人教練預約
+                    NuxtLink(to="/forms/opower/reservation" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") O'Power  Fitness 健身私人教練預約
                 li(class=" hover:opacity-80" @click="ClickTraining")
                   a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 師資培訓
                 ul(v-show="isTraining" class="pl-5")
                   li(class=" hover:opacity-80")
-                    a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") 【AntiGravity®】Fundamentals 反重力體適能基礎 1+2 &amp; 培訓說明會
+                    NuxtLink(to="/forms/AgCoachTraining01" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") 【AntiGravity®】Fundamentals 反重力體適能基礎 1+2 &amp; 培訓說明會
                   li(class=" hover:opacity-80")
-                    a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") 【AntiGravity®】Advanced Trainings進階培訓
+                    NuxtLink(to="/forms/AgCoachTraining02" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") 【AntiGravity®】Advanced Trainings進階培訓
                 li(class=" hover:opacity-80")
                   a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 會員活動
                 li(class=" hover:opacity-80" @click="ClickSpecial")
                   a(href="#" class="inline-block  min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 特別活動
                 ul(v-show="isSpecial" class="pl-5")
                   li(class=" hover:opacity-80")
-                    a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") AntiGravity®師資培訓：分享說明會
+                    NuxtLink(to="/forms/AgCoachTraining04" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#e84860] px-4 pb-3 pt-[10px]") AntiGravity®師資培訓：分享說明會
 
         li(class="dropdown p-5 text-sm")
           label(class="cursor-pointer ") 聯絡我們
             div(class="dropdown-menu absolute z-20 ml-7 hidden pt-12 text-sm")
               ul(class=" -mt-1  mb-0 min-w-[220px]  pl-0")
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 企業合作方案
+                  NuxtLink(to="/business" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 企業合作方案
                     span Business cooperation
                 li(class=" hover:opacity-80")
-                  a(href="" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px] ") 徵才資訊
+                  NuxtLink(to="/recruit" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px] ") 徵才資訊
                     span Recruit
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 聯絡資訊
+                  NuxtLink(to="/contact" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 聯絡資訊
                     span Contact Information
                 li(class=" hover:opacity-80")
-                  a(href="#" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 學生滿意度問卷
+                  NuxtLink(to="/survey/survey-student-satisfaction" class="inline-block w-full min-w-[220px] max-w-[360px] border-b border-solid border-[#f0c4c3] bg-[#F09491] px-4 pb-3 pt-[10px]") 學生滿意度問卷
                     span Student Satisfaction Survey
       button(class="rounded-s-sm border-2 px-2 py-1 text-xs") 會員登入
 

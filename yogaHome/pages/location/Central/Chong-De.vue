@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// antigravity-fitness 品牌介紹-antigravity-fitness👈
+// Chong-De  據點介紹-台中崇德館
 </script>
 
 <template lang="pug">
-#antigravity-fitness
-  p antigravity-fitness 品牌介紹-antigravity-fitness
+#Chong-De
+  p Chong-De 據點介紹-台中崇德館
 </template>
 
 <style lang="scss" scoped>

@@ -1,12 +1,15 @@
 <script setup lang="ts">
 
 // home 首頁
+import banner from '@/components/page/home/banner.vue';
+import bannerMenu from '@/components/page/home/bannerMenu.vue';
 </script>
 
-<template>
-  <div>
-
-  </div>
+<template lang="pug">
+#home
+  div
+    banner
+    bannerMenu
 
 </template>
 
