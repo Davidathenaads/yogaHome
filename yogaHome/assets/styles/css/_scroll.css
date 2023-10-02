@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+  margin: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#0000004f;
+
+  /* border-radius: 30px */
+  background-clip: padding-box !important;
+  border: solid transparent !important;
+
+  /* filter: invert(100%); */
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000ac;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent !important;  /* 滾動條的顏色 */
+}

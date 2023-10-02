@@ -1,0 +1,38 @@
+
+html {
+  /* font-family: "Roboto, Noto Sans TC"; */
+
+  overflow-x: hidden;
+  overflow-y: overlay;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, dl, dt, dd, pre, form, fieldset, input, blockquote, th, td, p {
+  margin:0;
+  padding:0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}

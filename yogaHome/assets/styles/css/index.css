@@ -1,0 +1,6 @@
+@import '@/assets/styles/css/tailwind';
+@import '@/assets/styles/css/_init.css';
+@import '@/assets/styles/css/_theme.css';
+@import '@/assets/styles/css/_scroll.css';
+@import '@/assets/styles/css/_vue-transition.css';
+@import '@/assets/styles/css/_element-plug-theme.css';

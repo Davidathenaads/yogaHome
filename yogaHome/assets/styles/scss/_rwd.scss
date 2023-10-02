@@ -1,0 +1,71 @@
+$pc-media: 1025px;
+$mobile-media: 1024px;
+
+// 電腦
+@mixin pc-media() {
+  @media all and (min-width: $pc-media) {
+    @content;
+  }
+}
+
+// 行動裝置
+@mixin mobile-media() {
+  @media all and (width <= 1024px) {
+    @content;
+  }
+}
+
+// ---------------
+// 大於等於 觸發
+@mixin rwd-more($more) {
+  @media all and (min-width: ($more + 'px')) {
+    @content;
+  }
+}
+
+// 小於等於 觸發
+@mixin rwd-less($less) {
+  @media all and (max-width: ($less + 'px')) {
+    @content;
+  }
+}
+
+// 兩數之間 觸發
+@mixin rwd-between($min, $max) {
+  @media all and (min-width: ($min + 'px')) and (max-width: ($max + 'px')) {
+    @content;
+  }
+}
+
+// $pc-media: 1025px;
+// $pad-media: 1024px;
+// $pads-media: 768px;
+// $phone-media: 767px;
+
+// //平板
+// @mixin pad-media() {
+//   @media all and (min-width: $pads-media) and (max-width: $pad-media) {
+//     @content;
+//   }
+// }
+// //手機
+// @mixin phone-media() {
+//   @media all and (max-width: $phone-media) {
+//     @content;
+//   }
+// }
+//  ---------------
+
+// // 電腦平板
+// @mixin pc-pad-media() {
+//   @media all and (min-width: $pads-media) {
+//     @content;
+//   }
+// }
+// // 平板手機
+// @mixin pad-phone-media() {
+//   @media all and (max-width: $pad-media) {
+//     @content;
+//   }
+// }
+

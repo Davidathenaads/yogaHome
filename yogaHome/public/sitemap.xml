@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML文件需以utf-8編碼-->
+<urlset>
+   <!--必填-->
+   <url>
+       <!--必填,定義某一個鏈接的入口，每一條數據必須要用<url>和</url>來標示 -->
+       <loc>https://www.liaotianhuifu.com</loc>
+       <!--必填,URL長度限制在256字節內-->
+       <lastmod>2023-06-17</lastmod>
+       <!--更新時間標籤，非必填，用來表示最後更新時間-->
+       <changefreq>daily</changefreq>
+       <!--更新頻率標籤，非必填，用來告知引擎頁面的更新頻率 -->
+       <priority>1</priority>
+       <!--優先權標籤，優先權值0.0-1.0，用來告知引擎該條url的優先級-->
+   </url>
+   <url>
+       <loc>https://www.liaotianhuifu.com/mobile</loc>
+       <lastmod>2023-06-17</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8</priority>
+   </url>
+   <url>
+       <loc>https://www.liaotianhuifu.com/question</loc>
+       <lastmod>2023-06-17</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8</priority>
+   </url>
+   <url>
+       <loc>https://www.liaotianhuifu.com/poetry</loc>
+       <lastmod>2023-06-17</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8</priority>
+   </url>
+   <url>
+       <loc>https://www.liaotianhuifu.com/encyclopedia</loc>
+       <lastmod>2023-06-17</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8</priority>
+   </url>
+   <url>
+       <loc>https://www.liaotianhuifu.com/us/about</loc>
+       <lastmod>2023-06-17</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8</priority>
+   </url>
+   <url>
+       <loc>https://www.liaotianhuifu.com/us/contact</loc>
+       <lastmod>2023-06-17</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8</priority>
+   </url>
+</urlset>
