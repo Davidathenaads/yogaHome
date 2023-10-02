@@ -1,18 +1,19 @@
 <script setup lang="ts">
 // layout
+import headerLayout from '@/components/layout/headerLayout.vue';
+import footerLayout from '@/components/layout/footerLayout.vue';
 </script>
 
 <template lang="pug">
 #layout
-  //- p layout
-  //- pre(v-for="i of 100" :key="i") {{ "123231212123231212312aa123231212312aa123231212312aa123231212312aa123231212312aa123231212312aa312aa" }}
-  //- // TODO check
+  headerLayout
   NuxtPage
+  footerLayout
 </template>
 
 <style lang="scss">
 body {
-  background-color: #eee;
+  background-color: #F09491;
 }
 
 // 佈局
