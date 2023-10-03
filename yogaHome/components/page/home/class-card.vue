@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// ClassCard 課程卡片組件
+// ClassCard 課程卡片組件 主要被class-vue引入
 import WhiteBtn from '@/components/at-ui/white-btn.vue';
 // 資料 --------------------------------------------------------------------------------------------
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})

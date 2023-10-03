@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Postbox 文章box
+// Postbox 文章box 主要被post-vue引入
 import RedBtn from '@/components/at-ui/red-btn.vue';
 // 資料 --------------------------------------------------------------------------------------------
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})

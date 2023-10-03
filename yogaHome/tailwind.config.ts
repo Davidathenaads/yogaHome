@@ -11,20 +11,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        red: '#ff0000',
         primary: {
           100: '#ea0023',
           200: '#e84860',
           300: '#DB485D',
           400: '#e24e64',
           500: '#e74760',
-          600: '#d93b57'
+          600: '#d93b57',
+          700: '#ff0000',
+          800: '#ea0023',
+          900: '#c0392b'
         },
         secondary: {
           100: '#f19d94',
           200: '#f09491',
           300: '#ea8c89',
-          400: '#d98683'
+          400: '#d98683',
+          500: '#ffa9b6',
+          600: '#efacb6'
         },
         thirdary: {
           100: '#a4d4d7',
@@ -33,24 +37,27 @@ module.exports = {
           400: '#45828b',
           500: '#4c5b5d'
         },
-        orange: {
-          100: '#eec8a1',
-          200: '#f9cda6'
+        card: {
+          DEFAULT: '#eec8a1'
+        },
+        item: {
+          DEFAULT: '#f9cda6'
         },
         brown: '#825450d9',
-        blue1: '#007aff',
-        blue2: '#416cc3',
-        dark: '#3f3f3f',
-        dark2: '#00000099',
-        white1: '#ffffff66',
-        white2: '#ffffff4d',
-        white3: '#f5f5f5',
-        green1: '#00c200',
-        red1: '#ffa9b6',
-        red2: '#efacb6',
-        red3: '#ea0023',
-        red4: '#c0392b',
-        yellow1: '#ffcc99'
+        facebook: {
+          DEFAULT: '#416cc3',
+          dark: '#007aff'
+        },
+        muted: {
+          50: '#f5f5f5',
+          100: '#ffffff66',
+          200: '#ffffff4d',
+          300: '#3f3f3f'
+        },
+        line: {
+          DEFAULT: '#00c200'
+        },
+        warning: '#ffcc99'
       },
       keyframes: {
         anileft: {

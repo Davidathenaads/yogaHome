@@ -1,7 +1,9 @@
 <script setup lang="ts">
 // Header
 import { Close } from '@element-plus/icons-vue';
+/** 控制是否打開手機版選單 */
 const isOpen = ref<boolean>(false);
+/** 控制瑜珈研習子選單開關的變數 */
 const isSeminars = ref<boolean>(false);
 const isCourse = ref<boolean>(false);
 const isCelebrating = ref<boolean>(false);
@@ -13,6 +15,7 @@ const isIntroduction = ref<boolean>(false);
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})
 
 // 接收事件 -----------------------------------------------------------------------------------------
+/** 當手機版選單打開時讓後面螢幕無法滑動 關閉時回復原狀 */
 const Mobilebtnclick = (isScrollOpen:boolean) => {
   isOpen.value = !isOpen.value;
   const html = document.querySelector<HTMLHtmlElement>('html');
@@ -24,6 +27,8 @@ const Mobilebtnclick = (isScrollOpen:boolean) => {
   }
   html?.style.removeProperty('overflow');
 };
+
+/** 控制瑜珈研習子選單開關的函式 */
 const ClickSeminars = () => {
   isSeminars.value = !isSeminars.value;
 };
@@ -245,10 +250,13 @@ const ClickIntroduction = () => {
 </template>
 
 <style lang="scss" scoped>
+
+/** 控制子選單hover打開 */
   .dropdown:hover .dropdown-menu {
     display: block;
   }
 
+/** 控制選單開關的動畫 主要用動態class實現 */
   .open{
   left: 0 !important;
   transition: all 0.3s ease 0;
