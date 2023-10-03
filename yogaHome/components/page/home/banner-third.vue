@@ -1,6 +1,8 @@
 <script setup lang="ts">
-// banner banner
-
+// bannerThird 第三個banner👈
+import RedBtn from '@/components/at-ui/red-btn.vue';
+const elementToCheck = ref<any>();
+const isScroll = ref<boolean>(false);
 // 資料 --------------------------------------------------------------------------------------------
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})
 
@@ -9,35 +11,45 @@
 // 流程 --------------------------------------------------------------------------------------------
 
 // 函式 --------------------------------------------------------------------------------------------
+const CheckVisibility = () => {
+  const element = elementToCheck.value;
+  const windowHeight = window.innerHeight;
+  const elementTop = element.getBoundingClientRect().top;
+  if (elementTop < windowHeight) {
+    isScroll.value = true;
+  }
 
+  if (isScroll.value === true) {
+    window.removeEventListener('scroll', CheckVisibility);
+  }
+};
 // Api ---------------------------------------------------------------------------------------------
 
 // 生命週期 -----------------------------------------------------------------------------------------
 // onMounted useAsnycData
-
+onMounted(() => {
+  window.addEventListener('scroll', CheckVisibility);
+});
 // 對外事件 -----------------------------------------------------------------------------------------
 // const emit = defineEmits(["update:modelValue","on-change"]);
 
 // Ref 輸出 ----------------------------------------------------------------------------------------
 // defineExpose({ ... })
+
 </script>
 
 <template lang="pug">
-#banner
-  div(class="relative h-[calc(100vh-80px)] bg-[url('@/assets/img/slide-1.jpg')] bg-cover bg-fixed bg-top bg-no-repeat xl:h-[100vh]")
-    div(class="absolute left-[10%] top-1/4 animate-anileft")
-      p(class="text-lg text-white xl:text-4xl") the Perfect Place
-      p(class="mb-20 mt-[10px] text-3xl font-medium leading-9 tracking-widest text-white xl:text-7xl")
-       |From Beginner
-       br
-       |to Master
-      p(class="mb-16 text-lg text-white xl:text-4xl") 從初學到成為專精者的好地方。
-      a(
-        href="#"
-        class="bg-secondary-100 py-3 pl-12 pr-10 tracking-wider text-white"
-      ) 預約體驗
+#bannerThird
+  div(class="relative h-60 bg-[url('@/assets/img/home-banner-3.jpeg')] bg-cover bg-fixed xl:h-[560px]")
+    div(ref="elementToCheck" class="absolute left-[10%] top-1/2 -translate-y-1/2 xl:left-[unset] xl:right-[10%]")
+      div(:class="{'animate-aniright': isScroll}")
+        p(class="text-[26px] text-white xl:text-5xl") AntiGravity® Fitness
+        p(class=" mb-9 text-sm text-white xl:mb-10 xl:text-3xl") NASM AFAA YA 唯一世界認證空中系統
+        RedBtn(class="flex justify-start")
+          a(href="＃") 了解更多
 </template>
 
 <style lang="scss" scoped>
 // 佈局
+
 </style>

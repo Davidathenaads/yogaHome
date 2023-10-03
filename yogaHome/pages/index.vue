@@ -2,26 +2,26 @@
 
 // home 首頁
 import banner from '@/components/page/home/banner.vue';
-import bannerMenu from '@/components/page/home/bannerMenu.vue';
-import postVue from '@/components/page/home/postVue.vue';
-import bannerSecond from '@/components/page/home/bannerSecond.vue';
-import classVue from '@/components/page/home/classVue.vue';
-import bannerThird from '@/components/page/home/bannerThird.vue';
-import classSecond from '@/components/page/home/classSecond.vue';
-import formVue from '@/components/page/home/form.vue';
+import BannerMenu from '@/components/page/home/banner-menu.vue';
+import PostVue from '@/components/page/home/post-vue.vue';
+import BannerSecond from '@/components/page/home/banner-second.vue';
+import ClassVue from '@/components/page/home/class-vue.vue';
+import BannerThird from '@/components/page/home/banner-third.vue';
+import ClassSecond from '@/components/page/home/class-second.vue';
+import FormVue from '@/components/page/home/form.vue';
 </script>
 
 <template lang="pug">
 #home
   div
     banner
-    bannerMenu
-    postVue
-    bannerSecond
-    classVue
-    bannerThird
-    classSecond
-    formVue
+    BannerMenu
+    PostVue
+    BannerSecond
+    ClassVue
+    BannerThird
+    ClassSecond
+    FormVue
 
 </template>
 

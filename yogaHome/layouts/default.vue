@@ -1,14 +1,14 @@
 <script setup lang="ts">
 // layout
-import headerLayout from '@/components/layout/headerLayout.vue';
-import footerLayout from '@/components/layout/footerLayout.vue';
+import HeaderLayout from '@/components/layout/header-layout.vue';
+import FooterLayout from '@/components/layout/footer-layout.vue';
 </script>
 
 <template lang="pug">
 #layout
-  headerLayout
+  HeaderLayout
   NuxtPage
-  footerLayout
+  FooterLayout
 </template>
 
 <style lang="scss">

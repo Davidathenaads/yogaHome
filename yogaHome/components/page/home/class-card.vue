@@ -1,9 +1,30 @@
 <script setup lang="ts">
-// banner banner
-
+// ClassCard 課程卡片組件
+import WhiteBtn from '@/components/at-ui/white-btn.vue';
 // 資料 --------------------------------------------------------------------------------------------
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})
-
+const props = defineProps({
+  title: {
+    type: String,
+    default: '反重力課程'
+  },
+  titleSec: {
+    type: String,
+    default: 'AntiGravity® Fitness'
+  },
+  text: {
+    type: String,
+    default: '感受空中伸展的'
+  },
+  textSec: {
+    type: String,
+    default: '藝術之美。'
+  },
+  color: {
+    type: String,
+    default: 'bg-primary-200'
+  }
+});
 // 接收事件 -----------------------------------------------------------------------------------------
 
 // 流程 --------------------------------------------------------------------------------------------
@@ -20,24 +41,26 @@
 
 // Ref 輸出 ----------------------------------------------------------------------------------------
 // defineExpose({ ... })
+
 </script>
 
 <template lang="pug">
-#banner
-  div(class="relative h-[calc(100vh-80px)] bg-[url('@/assets/img/slide-1.jpg')] bg-cover bg-fixed bg-top bg-no-repeat xl:h-[100vh]")
-    div(class="absolute left-[10%] top-1/4 animate-anileft")
-      p(class="text-lg text-white xl:text-4xl") the Perfect Place
-      p(class="mb-20 mt-[10px] text-3xl font-medium leading-9 tracking-widest text-white xl:text-7xl")
-       |From Beginner
-       br
-       |to Master
-      p(class="mb-16 text-lg text-white xl:text-4xl") 從初學到成為專精者的好地方。
-      a(
-        href="#"
-        class="bg-secondary-100 py-3 pl-12 pr-10 tracking-wider text-white"
-      ) 預約體驗
+#ClassCard
+  .class-card(class="mx-[5%] mb-5 xl:mb-5 xl:px-5")
+    div(class="rounded-2xl p-6 xl:px-10 xl:pb-16 xl:pt-12" :class="props.color")
+      div
+        div(class="flex items-center xl:block")
+          p(class="text-sm font-bold text-white xl:text-xl") {{ props.title }}
+          p(class="ml-1 text-xs text-white xl:ml-0") {{ props.titleSec }}
+        div(class="mb-9 mt-3 text-[20px] tracking-widest text-white xl:my-14 xl:flex xl:flex-col xl:text-3xl") {{ props.text }}
+          span {{ props.textSec }}
+        div
+          div(class="flex")
+            WhiteBtn
+              a(href="＃") 一般課程
 </template>
 
 <style lang="scss" scoped>
 // 佈局
+
 </style>

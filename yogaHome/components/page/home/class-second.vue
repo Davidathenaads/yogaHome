@@ -1,6 +1,6 @@
 <script setup lang="ts">
-// banner banner
-
+// classSecond 第二個課程介紹
+import WhiteBtn from '@/components/at-ui/white-btn.vue';
 // 資料 --------------------------------------------------------------------------------------------
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})
 
@@ -23,21 +23,21 @@
 </script>
 
 <template lang="pug">
-#banner
-  div(class="relative h-[calc(100vh-80px)] bg-[url('@/assets/img/slide-1.jpg')] bg-cover bg-fixed bg-top bg-no-repeat xl:h-[100vh]")
-    div(class="absolute left-[10%] top-1/4 animate-anileft")
-      p(class="text-lg text-white xl:text-4xl") the Perfect Place
-      p(class="mb-20 mt-[10px] text-3xl font-medium leading-9 tracking-widest text-white xl:text-7xl")
-       |From Beginner
-       br
-       |to Master
-      p(class="mb-16 text-lg text-white xl:text-4xl") 從初學到成為專精者的好地方。
-      a(
-        href="#"
-        class="bg-secondary-100 py-3 pl-12 pr-10 tracking-wider text-white"
-      ) 預約體驗
+#classSecond
+  div(class="bg-primary-600 py-20 xl:pb-32 xl:pt-36")
+    div(class="container mx-auto")
+      p(class="mb-2 text-center text-[18px] text-white xl:mb-9 xl:text-4xl") 台灣唯一官方認證單位
+      p(class="text-center text-[26px] text-white xl:text-6xl") AntiGravity® Taiwan
+      div(class="mt-20 xl:mb-12")
+      div(class="mx-auto flex w-[82%] justify-between xl:mx-0 xl:w-full xl:justify-center xl:gap-40")
+        WhiteBtn
+          a(href="＃") 私教課程
+        WhiteBtn
+          a(href="＃") 企業包班
+
 </template>
 
 <style lang="scss" scoped>
 // 佈局
+
 </style>

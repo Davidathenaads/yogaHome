@@ -1,6 +1,8 @@
 <script setup lang="ts">
-// banner banner
-
+// PostVue 三篇文章👈
+import postStr from '@/components/page/home/postStr';
+import PostBox from '@/components/page/home/post-box.vue';
+import WhiteBtn from '@/components/at-ui/white-btn.vue';
 // 資料 --------------------------------------------------------------------------------------------
 // const props = defineProps({}); const val = computed(() => {}); definePageMeta({})
 
@@ -23,21 +25,21 @@
 </script>
 
 <template lang="pug">
-#banner
-  div(class="relative h-[calc(100vh-80px)] bg-[url('@/assets/img/slide-1.jpg')] bg-cover bg-fixed bg-top bg-no-repeat xl:h-[100vh]")
-    div(class="absolute left-[10%] top-1/4 animate-anileft")
-      p(class="text-lg text-white xl:text-4xl") the Perfect Place
-      p(class="mb-20 mt-[10px] text-3xl font-medium leading-9 tracking-widest text-white xl:text-7xl")
-       |From Beginner
-       br
-       |to Master
-      p(class="mb-16 text-lg text-white xl:text-4xl") 從初學到成為專精者的好地方。
-      a(
-        href="#"
-        class="bg-secondary-100 py-3 pl-12 pr-10 tracking-wider text-white"
-      ) 預約體驗
+#PostVue
+  div(class="container mx-auto flex w-[90%] pt-[60px]")
+    div(class=" mx-auto xl:mx-5 xl:grid xl:grid-cols-3 xl:justify-center xl:gap-9 xl:pt-32")
+      div(class="mx-4")
+        PostBox(:img="postStr.img1" :title="postStr.title1" :text="postStr.text1")
+      div(class="mx-4")
+        PostBox(:img="postStr.img2" :title="postStr.title2" :text="postStr.text2")
+      div(class="mx-4")
+        PostBox(:img="postStr.img3" :title="postStr.title3" :text="postStr.text3")
+  div(class="mb-20 mt-5 flex justify-center xl:mb-0 xl:mt-[100px] xl:pb-28")
+      WhiteBtn
+        a(href="https://www.flyhighyoga.com.tw/press") MORE
 </template>
 
 <style lang="scss" scoped>
 // 佈局
+
 </style>

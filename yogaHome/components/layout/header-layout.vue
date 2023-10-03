@@ -1,53 +1,70 @@
 <script setup lang="ts">
-// header
+// Header
 import { Close } from '@element-plus/icons-vue';
+const isOpen = ref<boolean>(false);
+const isSeminars = ref<boolean>(false);
+const isCourse = ref<boolean>(false);
+const isCelebrating = ref<boolean>(false);
+const isTraining = ref<boolean>(false);
+const isSpecial = ref<boolean>(false);
+/** mobile */
+const isIntroduction = ref<boolean>(false);
+// 資料 --------------------------------------------------------------------------------------------
+// const props = defineProps({}); const val = computed(() => {}); definePageMeta({})
 
-const menuOpen = ref(false);
-const Mobilebtnclick = (scrollOpen:boolean) => {
-  menuOpen.value = !menuOpen.value;
-  const html = document.querySelector('html');
-  if (scrollOpen) {
+// 接收事件 -----------------------------------------------------------------------------------------
+const Mobilebtnclick = (isScrollOpen:boolean) => {
+  isOpen.value = !isOpen.value;
+  const html = document.querySelector<HTMLHtmlElement>('html');
+  if (isScrollOpen) {
     if (html) {
       html.style.overflow = 'hidden';
     }
-  } else {
-    html?.style.removeProperty('overflow');
+    return true;
   }
+  html?.style.removeProperty('overflow');
 };
-const isSeminars = ref(false);
 const ClickSeminars = () => {
   isSeminars.value = !isSeminars.value;
 };
-const isCourse = ref(false);
 const ClickCourse = () => {
   isCourse.value = !isCourse.value;
 };
-const isCelebrating = ref(false);
 const ClickCelebrating = () => {
   isCelebrating.value = !isCelebrating.value;
 };
-const isTraining = ref(false);
 const ClickTraining = () => {
   isTraining.value = !isTraining.value;
 };
-const isSpecial = ref(false);
 const ClickSpecial = () => {
   isSpecial.value = !isSpecial.value;
 };
-
-// mobile
-const isIntroduction = ref(false);
+/** mobile */
 const ClickIntroduction = () => {
   isIntroduction.value = !isIntroduction.value;
 };
+// 流程 --------------------------------------------------------------------------------------------
+
+// 函式 --------------------------------------------------------------------------------------------
+
+// Api ---------------------------------------------------------------------------------------------
+
+// 生命週期 -----------------------------------------------------------------------------------------
+// onMounted useAsnycData
+
+// 對外事件 -----------------------------------------------------------------------------------------
+// const emit = defineEmits(["update:modelValue","on-change"]);
+
+// Ref 輸出 ----------------------------------------------------------------------------------------
+// defineExpose({ ... })
 
 </script>
 
 <template lang="pug">
-#header
+#Header
   header
     div(name="mobilemenu z-10 fixed w-[100vw] h-[100vh]")
-      div(class="fixed left-[-100%] top-0 z-10 m-0 h-[100vh] w-full overflow-y-auto bg-brown p-0  transition-all delay-0 duration-300" :class="{open: menuOpen}")
+      div(class="fixed left-[-100%] top-0 z-10 m-0 h-[100vh] w-full overflow-y-auto bg-brown p-0  transition-all delay-0 duration-300" :class="{open: isOpen}")
         div(class="absolute right-5 top-9")
           el-icon(:size="50" color="#fff" class="z-20" @click="Mobilebtnclick(false)")
             Close
