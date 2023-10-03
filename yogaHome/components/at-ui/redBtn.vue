@@ -5,7 +5,7 @@
 <template lang="pug">
 #redBtn
   div(class="mt-12 text-center")
-    a(class="bg-yoga-btncolor px-10 py-3 text-white")
+    a(class="bg-primary-300 px-10 py-3 text-white")
       slot
 </template>
 

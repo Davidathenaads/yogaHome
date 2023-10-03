@@ -47,7 +47,7 @@ const ClickIntroduction = () => {
 #header
   header
     div(name="mobilemenu z-10 fixed w-[100vw] h-[100vh]")
-      div(class="fixed left-[-100%] top-0 z-10 m-0 h-[100vh] w-full overflow-y-auto bg-yoga-mobilecolor p-0  transition-all delay-0 duration-300" :class="{open: menuOpen}")
+      div(class="fixed left-[-100%] top-0 z-10 m-0 h-[100vh] w-full overflow-y-auto bg-brown p-0  transition-all delay-0 duration-300" :class="{open: menuOpen}")
         div(class="absolute right-5 top-9")
           el-icon(:size="50" color="#fff" class="z-20" @click="Mobilebtnclick(false)")
             Close

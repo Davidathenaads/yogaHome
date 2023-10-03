@@ -45,38 +45,38 @@ const sujectvalue = ref('');
     div(class="flex justify-center")
       div(class="")
         p(class="mb-5 mt-10 flex justify-start text-xs text-white").
-          標記<span class="text-yoga-red">*</span>為必填項目
+          標記<span class="text-red">*</span>為必填項目
 
     div(class="flex flex-col items-center justify-center")
       div(class=" mb-9 w-full")
         p(class="mb-2 flex justify-start text-base text-white") 姓名
-          span(class="text-yoga-red") *
-        input(type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2 text-white")
+          span(class="text-red") *
+        input(type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2 text-white")
       div(class=" mb-9 w-full")
         p(class="mb-2 flex justify-start text-base text-white") 電話
-          span(class="text-yoga-red") *
-        input(type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2")
+          span(class="text-red") *
+        input(type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2")
       div(class=" mb-9 w-full")
         p(class="mb-2 flex justify-start text-base text-white") E-mail
-        span(class="text-yoga-red") *
-        input(type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2")
+        span(class="text-red") *
+        input(type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2")
       div(class=" mb-9 w-full")
         p(class="mb-2 flex justify-start text-base text-white") 運動習慣
-          span(class="text-yoga-red") *
-        select(v-model="hobbitsvalue" type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2 text-white")
+          span(class="text-red") *
+        select(v-model="hobbitsvalue" type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2 text-white")
           option(disabled value="")
           option(v-for="item in hobbits" :key="item" :value="item") {{ item }}
 
       div(class=" mb-9 w-full")
         p(class="mb-2 flex justify-start text-base text-white") 居住區域
-          span(class="text-yoga-red") *
-        select(v-model="locationvalue" type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2 text-white")
+          span(class="text-red") *
+        select(v-model="locationvalue" type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2 text-white")
           option(disabled value="")
           option(v-for="item in location" :key="item" :value="item") {{ item }}
     div(class="flex justify-start")
       div(class="")
         p(class="mt-10 flex justify-start text-base text-white") 欲預約館別
-          span(class="text-yoga-red") *
+          span(class="text-red") *
     div(class="mb-9")
       el-radio-group(v-model="radio" class="break-all")
         p {{ radio }}
@@ -88,37 +88,37 @@ const sujectvalue = ref('');
       div(class="")
         div(class=" mb-9")
           p(class="mb-2 flex justify-start text-base text-white") 欲體驗科目
-            span(class="text-yoga-red") *
-          select(v-model="locationvalue" type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2 text-white")
+            span(class="text-red") *
+          select(v-model="locationvalue" type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2 text-white")
             option(disabled value="") 請選擇
             option(v-for="item in suject" :key="item" :value="item" :v-model="sujectvalue") {{ item }}
         div(class=" mb-9")
           p(class="mb-2 flex justify-start text-base text-white") 優惠碼
-          input(type="text" placeholder="" class="w-full bg-yoga-pink2 px-4 py-2")
+          input(type="text" placeholder="" class="w-full bg-secondary-400 px-4 py-2")
         div(class="my-[60px] text-center text-[22px] text-white") 完整填妥表格，我們將由專人處理 並會在24H內回覆您並確認訂課，請您耐心等待
-        div(class="mt-12 flex-wrap justify-center bg-yoga-linecolor pb-4 pt-8 xl:grid xl:grid-cols-6")
+        div(class="mt-12 flex-wrap justify-center bg-secondary-300 pb-4 pt-8 xl:grid xl:grid-cols-6")
           div(class="px-3")
-            a(href="#" class="mb-5 flex justify-center rounded bg-yoga-linebtncolor p-2")
+            a(href="#" class="mb-5 flex justify-center rounded bg-primary-400 p-2")
               img(src="@/assets/img/line-outline.png" alt="" class="w-6")
               p(class="text-white") 崇德館
           div(class="px-3")
-            a(href="#" class="mb-5 flex justify-center rounded bg-yoga-linebtncolor p-2")
+            a(href="#" class="mb-5 flex justify-center rounded bg-primary-400 p-2")
               img(src="@/assets/img/line-outline.png" alt="" class="w-6")
               p(class="text-white") 精誠館
           div(class="px-3")
-            a(href="#" class="mb-5 flex justify-center rounded bg-yoga-linebtncolor p-2")
+            a(href="#" class="mb-5 flex justify-center rounded bg-primary-400 p-2")
               img(src="@/assets/img/line-outline.png" alt="" class="w-6")
               p(class="text-white") 黎明館
           div(class="px-3")
-            a(href="#" class="mb-5 flex justify-center rounded bg-yoga-linebtncolor p-2")
+            a(href="#" class="mb-5 flex justify-center rounded bg-primary-400 p-2")
               img(src="@/assets/img/line-outline.png" alt="" class="w-6")
               p(class="text-white") 河南館
           div(class="px-3")
-            a(href="#" class="mb-5 flex justify-center rounded bg-yoga-linebtncolor p-2")
+            a(href="#" class="mb-5 flex justify-center rounded bg-primary-400 p-2")
               img(src="@/assets/img/line-outline.png" alt="" class="w-6")
               p(class="text-white") 一中館
           div(class="px-3")
-            a(href="#" class="mb-5 flex justify-center rounded bg-yoga-linebtncolor p-2")
+            a(href="#" class="mb-5 flex justify-center rounded bg-primary-400 p-2")
               img(src="@/assets/img/line-outline.png" alt="" class="w-6")
               p(class="text-white") 崇善館
   div(class="mb-0 mt-[60px] pb-20 xl:mb-[168px] xl:mt-20")

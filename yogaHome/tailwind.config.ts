@@ -11,22 +11,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primarycolor: '#d93b57',
-        yogapink: '#f19d94',
-        yoga: {
-          pink: '##f19d94',
-          card: {
-            left: '#e84860',
-            right: '#eec8a1'
-          },
-          pink2: '#d98683',
-          red: '#FF0000',
-          linecolor: '#ea8c89',
-          linebtncolor: '#e24e64',
-          btncolor: '#db485d',
-          footercolor: '#E74760',
-          mobilecolor: '#825450d9'
-        }
+        red: '#ff0000',
+        primary: {
+          100: '#ea0023',
+          200: '#e84860',
+          300: '#DB485D',
+          400: '#e24e64',
+          500: '#e74760',
+          600: '#d93b57'
+        },
+        secondary: {
+          100: '#f19d94',
+          200: '#f09491',
+          300: '#ea8c89',
+          400: '#d98683'
+        },
+        orange: '#eec8a1',
+        brown: '#825450d9'
       },
       keyframes: {
         anileft: {

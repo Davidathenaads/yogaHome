@@ -14,7 +14,7 @@
       p(class="mb-16 text-lg text-white xl:text-4xl") 從初學到成為專精者的好地方。
       a(
         href="#"
-        class="bg-yogapink py-3 pl-12 pr-10 tracking-wider text-white"
+        class="bg-secondary-100 py-3 pl-12 pr-10 tracking-wider text-white"
       ) 預約體驗
 </template>
 

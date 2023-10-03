@@ -5,7 +5,7 @@ import whitebtn from '@/components/at-ui/whiteBtn.vue';
 
 <template lang="pug">
 #classSecond
-  div(class="bg-primarycolor py-20 xl:pb-32 xl:pt-36")
+  div(class="bg-primary-600 py-20 xl:pb-32 xl:pt-36")
     div(class="container mx-auto")
       p(class="mb-2 text-center text-[18px] text-white xl:mb-9 xl:text-4xl") 台灣唯一官方認證單位
       p(class="text-center text-[26px] text-white xl:text-6xl") AntiGravity® Taiwan

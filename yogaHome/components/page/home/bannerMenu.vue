@@ -4,7 +4,7 @@
 
 <template lang="pug">
 #bannerMenuVue
-  div(class="container mx-auto flex w-[96%] flex-wrap items-center justify-center border-b-2 border-primarycolor py-6 xl:flex xl:flex-nowrap")
+  div(class="container mx-auto flex w-[96%] flex-wrap items-center justify-center border-b-2 border-primary-600 py-6 xl:flex xl:flex-nowrap")
     div(class="flex w-1/2 justify-start px-4")
       div(class="flex items-center justify-start")
         img(src="@/assets/img/member.png" alt="" class="w-4 xl:w-10")

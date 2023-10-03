@@ -20,7 +20,7 @@ const props = defineProps({
   },
   color: {
     type: String,
-    default: 'bg-yoga-card-left'
+    default: 'bg-primary-200'
   }
 });
 </script>

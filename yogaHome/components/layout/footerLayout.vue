@@ -5,7 +5,7 @@
 
 <template lang="pug">
 #footer
-  footer(class="bg-yoga-footercolor px-[5%] pb-16")
+  footer(class="bg-primary-500 px-[5%] pb-16")
     div(class="flex flex-col items-center justify-center pt-20")
       div(class="mb-16")
         p(class="mb-2 text-center text-3xl font-medium text-white xl:mb-4 xl:text-4xl") 關注我們
