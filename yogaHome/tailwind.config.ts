@@ -26,8 +26,31 @@ module.exports = {
           300: '#ea8c89',
           400: '#d98683'
         },
-        orange: '#eec8a1',
-        brown: '#825450d9'
+        thirdary: {
+          100: '#a4d4d7',
+          200: '#7bb0ba',
+          300: '#7aafb8',
+          400: '#45828b',
+          500: '#4c5b5d'
+        },
+        orange: {
+          100: '#eec8a1',
+          200: '#f9cda6'
+        },
+        brown: '#825450d9',
+        blue1: '#007aff',
+        blue2: '#416cc3',
+        dark: '#3f3f3f',
+        dark2: '#00000099',
+        white1: '#ffffff66',
+        white2: '#ffffff4d',
+        white3: '#f5f5f5',
+        green1: '#00c200',
+        red1: '#ffa9b6',
+        red2: '#efacb6',
+        red3: '#ea0023',
+        red4: '#c0392b',
+        yellow1: '#ffcc99'
       },
       keyframes: {
         anileft: {
